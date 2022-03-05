@@ -1,3 +1,7 @@
+console.log("Connected")
+var timeLeftSpan = document.querySelector("#timeLeft");
+var timeLeft = 5;
+
 var questions = [{
     title: "Which of the following function of an array object adds one or more elements to the front of an array and returns the new length of the array?",
     choices: ["unshift( )", "sort( )", "splice( )", "toString( )"],
@@ -24,8 +28,27 @@ var questions = [{
     answer: "concat( )"
 }
 ]
+//Numerical Variables
+var score = 0;
+var currentQuestion = -1;
+var timeLeft = 0;
+var timer;
 
-function x(){
-    
+//"Start" Button
+function start() {
+
+timeLeft = 75;
+document.getElementById("timeLeft").innerHTML = timeLeft;
+//When Time Has Run Out, Game Will End
+var startTimer = function () {
+    var timeInterval = setInterval(function () {
+        timeLeft--;
+        timeLeftSpan.textContent = timeLeft;
+        if(timeLeft === 0){
+            clearInterval(timeInterval);
+            endGame();
+        }
+    }, 1000)
 }
 
+startTimer();
