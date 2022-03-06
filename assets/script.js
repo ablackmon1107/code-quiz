@@ -48,11 +48,7 @@ function start() {
 
     next();
 }
-//When I Answer a Question Incorrectly, Then Time is Subtracted From the Clock//
-function incorrect() {
-    timeLeft -= 15; 
-    next();
-}
+
 //When I Answer a Question, Then I Am Presented With Another Question
 function next() {
     currentQuestion++;
