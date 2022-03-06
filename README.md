@@ -1,5 +1,5 @@
 # code-quiz
-What was your motivation?
+
 I created this project as a Challenge in this Coding Bootcamp to assess my knowledge and skill level in HTML, CSS, and most importantly JavaScript. 
 This application uses JavaScript to give users a series of questions, determine whether answers are correct/incorrect and allow them to save their highscores.
 This application also saves user data and allows it to be displayed on a subsequent screen.
